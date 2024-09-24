@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C.O.G.S. Inc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>C.O.G.S. Inc</h1>
+        <p>Coal, Oil and Gas Syndicate</p>
+        <h2>Contato</h2>
+    </header>
+    <nav>
+        <a href="produtos.html">Serviços e Produtos</a>
+        <a href="index.html">Pàgina Inicial</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+    <main>
+        <section class="imagem" id="img02">
+            <p>
+Avenida Energética, 1234 ||
+Bairro Sustentável ||
+Cidade Verde, SP ||
+CEP: 01234-567 ||
+Brasil
+<br>
+contato@sindicatocarvaooleogas.com.br || (11) 98765-4321
+</p>
+    <section class="questionario">
+        <h1 id="formular">Formulário</h1>
+        <form id="quizForm" action="https://formsubmit.co/contato@sindicatocarvaooleogas.com.br" method="POST">
+            <fieldset id="quizFieldset">
+                <!--adicionando Label e Input Text-->
+                <label for="nome" id="formular">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </fieldset>
+            <fieldset id="quizFieldset">
+                <label for="email" id="formular">E-Mail:</label>
+                <input type="text" id="email" name="email" required>    
+            </fieldset>
+            <fieldset id="quizFieldset">
+                <label for="mensagem" id="formular">Mensagem</label>
+                <input type="text" id="mensagem" name="mensagem" required>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="result"></div>
+    </section>
+    <br>
+        <footer>
+            Comprometidos com um futuro sustentável, o Sindicato de Carvão, Óleo e Gás trabalha para equilibrar energia e responsabilidade ambiental. Junte-se a nós na construção de um mundo mais verde e inovador.
+        </footer>
+    </main>
+    <script src="script.js"></script>
+    <audio controls autoplay loop hidden>
+        <source src="recursos/elevator2.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

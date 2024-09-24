@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("recursos/background4.png");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 550px;
+}
+
+.quiz-section {
+    background-color: rgb(211, 235, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 600px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    background-color: rgb(169, 216, 255);
+    padding: 3px;
+    border-radius: 12px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#leave {
+    background-color: rgb(1, 182, 1);
+}
+
+#submit {
+    background-color: #c90000;
+}
+
+#submit:hover {
+    background-color: #950000;
+}
+
+#resetbotao:disabled {
+    background-color: #c1c1c1;
+    color: grey;
+}
+
+#submit:disabled {
+    background-color: #c1c1c1;
+    color: grey;
+}
+
+#resetbotao:enabled {
+    background-color: #0c7bd0;
+    color: black;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
