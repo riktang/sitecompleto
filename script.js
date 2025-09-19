@@ -29,3 +29,17 @@ document.getElementById("quizForm").addEventListener("submit", function(event) {
         document.getElementById("quizForm").reset();
     }
 )
+
+function aumentarFonte() {
+    document.querySelectorAll("*").forEach(function (el) {
+        const currentSize = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = (currentSize + 2) + "px";
+    });
+}
+
+function diminuirFonte() {
+    document.querySelectorAll("*").forEach(function (el) {
+        const currentSize = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = (currentSize - 2) + "px";
+    });
+}

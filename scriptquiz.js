@@ -72,3 +72,18 @@ function resetQuiz() {
 
     document.querySelector('button[onclick="submitQuiz()"]').disabled = false;
 }
+
+
+function aumentarFonte() {
+    document.querySelectorAll("*").forEach(function (el) {
+        const currentSize = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = (currentSize + 2) + "px";
+    });
+}
+
+function diminuirFonte() {
+    document.querySelectorAll("*").forEach(function (el) {
+        const currentSize = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = (currentSize - 2) + "px";
+    });
+}

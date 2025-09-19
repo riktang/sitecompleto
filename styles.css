@@ -44,7 +44,7 @@ header h2{
 }
 
 nav{
-    background-color: rgb(0, 72, 255);
+    background-color: white;
     text-align: center;
     justify-content: center;
     padding: 5px;
@@ -187,4 +187,77 @@ button:hover {
 #produto{
     width: 300px;
     height: 200px;
+}
+
+#controle-fonte {
+
+  position: fixed; /* Fixa a posição da caixa na tela, mesmo quando rolar a página */
+
+  top: 68px; /* Distância de 80px do topo da página */
+
+  right: 20px; /* Distância de 20px da borda direita da página */
+
+  background-color: #fff; /* Fundo branco para a caixa */
+
+  border: 1px solid #ccc; /* Borda cinza clara em volta da caixa */
+
+  border-radius: 8px; /* Bordas arredondadas para deixar a caixa com cantos suaves */
+
+  padding: 10px; /* Espaçamento interno de 10px dentro da caixa */
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra leve para dar efeito de elevação */
+
+  z-index: 1000; /* Garante que o controle fique acima de outros elementos na tela */
+
+}
+
+
+
+/* Estilo para os botões dentro do controle de fonte */
+
+#controle-fonte button {
+
+  background-color: #6f4e37; /* Cor de fundo dos botões (tom de café) */
+
+  color: #fff; /* Cor da fonte dos botões (branca) */
+
+  border: none; /* Remove a borda padrão dos botões */
+
+  margin: 2px; /* Margem externa de 2px entre os botões */
+
+  padding: 8px 12px; /* Espaçamento interno (8px em cima/baixo, 12px nas laterais) */
+
+  font-size: 18px; /* Tamanho da fonte dos botões */
+
+  border-radius: 5px; /* Bordas arredondadas nos botões */
+
+  cursor: pointer; /* Mostra a mãozinha ao passar o mouse, indicando que é clicável */
+
+}
+
+
+
+/* Estilo para o botão quando o mouse passa por cima (hover) */
+
+#controle-fonte button:hover {
+
+  background-color: #5a392a; /* Cor mais escura para indicar que está sendo "hovered" */
+
+}
+
+.font-size-controls button {
+    background: #111;
+    color: #fff;
+    border: 2px solid #FFD600;
+    border-radius: 24px;
+    padding: 8px 20px;
+    margin: 0 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.font-size-controls button:hover {
+    background: #FFD600;
+    color: #111;
 }
